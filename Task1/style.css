@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    
+}
+.header{
+    text-align: center;
+    margin: 10% auto;
+    max-width: 600px;
+    font-size:20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    box-shadow: 20px 20px 50px gray;
+}
+i{
+    padding-top: 20px;
+}
+.contact-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    color: black;
+    margin: 0;
+}
+
+.email-link {
+    color: red;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    /* border-radius: 5px; */
+     /* width: 290px;
+    height: 40px;
+    padding-left: 10px; */
+    outline: none;
+    border: none;
+    font-size: 15px;
+    /* margin-bottom: 10px; */
+    background: none;
+    border-bottom: 2px solid black;
+}
+
+.input-group .fa {
+    font-size: 20px;
+    align-self: center;
+}
+
+.input-group select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-group textarea {
+    flex: 1;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 2px solid black;
+}
+.captcha {
+    margin-top: 10px;
+}
+.slider input{
+    width: 50vw;
+     
+}
+.send-button {
+    align-self: flex-end;
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 15px;
+    padding: 10px 20px;
+    height: 10vh;
+    width: 10vw;
+    border: none; 
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header {
+        margin: 20% auto;
+    }
+
+    .contact-container {
+        padding: 10px;
+    }
+    .slider input {
+        width: 80vw;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 18px;
+        margin: 30% auto;
+    }
+
+    .input-group input,
+    .input-group select,
+    .input-group textarea {
+        font-size: 14px;
+    }
+
+    .send-button {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .input-group input,
+    .input-group select,
+    .input-group textarea {
+        flex: 1;
+        padding: 8px;
+        margin-right: 8px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 650px) {
+    .input-group input,
+    .input-group select,
+    .input-group textarea {
+        flex: 1;
+        padding: 7px;
+        margin-right: 7px;
+        font-size: 13px;
+    }
+    .send-button{
+        width: 20%;
+        height: 20%;
+       
+    }
+}
+@media (max-width: 580px) {
+    .input-group input,
+    .input-group select,
+    .input-group textarea {
+        flex: 1;
+        padding: 5px;
+        margin-right: 5px;
+        font-size: 12px;
+    }
+}
+
+/* Media query for screens smaller than 480px (e.g., small mobile devices) */
+@media (max-width: 550px) {
+    .input-group input,
+    .input-group select,
+    .input-group textarea {
+        flex: 1;
+        padding: 3px;
+        margin-right: 3px;
+        font-size: 12px;
+    }
+    .slider{
+        width: 50%;
+    }
+}
+@media (max-width: 350px) {
+    .input-group input{
+        width: 1%;
+    }
+    .send-button{
+        width: 30%;
+       
+    }
+    .slider input {
+        width: 50vw;
+    }
+    
+}
+

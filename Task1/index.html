@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="header">
+        <h1>Contact Us</h1>
+        <p>We would be happy to hear from you, please fill in the form below or mail us your requirements on <br> <span class="email-link">info@hyperlinkinfosystem.com</span></p>
+    </div>
+    <div class="contact-container">
+        <div class="input-group">
+            <i class="fa-solid fa-user" aria-hidden="true"></i><input type="text" placeholder="Full Name">
+            <i class="fa-solid fa-envelope"></i><input type="email" placeholder="Email">
+        </div>
+        <br>
+        <div class="input-group">
+            <i class="fa-solid fa-phone"></i> <input type="text" placeholder="Contact No.">
+            <i class="fa-brands fa-whatsapp"></i><input type="text" placeholder="WhatsApp No.">
+            <i class="fa-brands fa-skype"></i><input type="text" placeholder="Skype">
+        </div>
+        <br>
+        <div class="input-group">
+            <i class="fa-solid fa-location-dot"></i><input type="text" placeholder="Address/Location">
+        </div>
+        <br>
+        <div class="input-group">
+            <input type="file" class="file">
+            <span>(Max size 20MB)</span>
+        </div>
+
+         <div class="input-group">
+            <div class="slider">
+                <label for="budget-range">Project Budget:</label><br>
+                <input type="range" min="5000" max="1000000" value="5000" oninput="rangeValue.innerText = this.value">
+                <p id="rangeValue">5000</p>
+            </div> 
+        </div> 
+
+        <div class="input-group">
+            <i class="fa-solid fa-message"></i><br><br> <textarea placeholder="Your Message"></textarea>
+        </div>
+
+        <div class="input-group captcha">
+            <span>Please enter sum :<br> sum 2 + 2 = </span><br>
+            <input type="text" placeholder="Write Answer...">
+        </div><br>
+        <p>We sign NDA for all our projects.</p>
+
+        <button class="send-button">Send</button>
+    </div>
+</body>
+</html>
